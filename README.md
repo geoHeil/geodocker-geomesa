@@ -53,7 +53,7 @@ java -cp geomesa-quickstart-accumulo/target/geomesa-quickstart-accumulo-1.3.0.ja
 
 you should be able to see the following out put
 
-´´´
+```
 Submitting query
 1.  Bierce|394|Fri Aug 01 23:55:05 UTC 2014|POINT (-77.42555615743139 -37.26710898726304)|null
 2.  Bierce|343|Wed Aug 06 08:59:22 UTC 2014|POINT (-76.66826220670282 -37.44503877750368)|null
@@ -76,3 +76,4 @@ Feature ID Observation.996 | Who: Addams | What: 996
 Feature ID Observation.993 | Who: Addams | What: 993
 Feature ID Observation.990 | Who: Addams | What: 990
 Feature ID Observation.987 | Who: Addams | What: 987
+```
