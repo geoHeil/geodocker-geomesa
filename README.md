@@ -80,3 +80,20 @@ Feature ID Observation.993 | Who: Addams | What: 993
 Feature ID Observation.990 | Who: Addams | What: 990
 Feature ID Observation.987 | Who: Addams | What: 987
 ```
+**step 5: try geoserver**
+
+- go to the following url http://localhost:9090/geoserver
+- login with admin / geoserver
+- add a new store
+![geoserver](img/addStore.jpg "Adding a store")
+
+- configure parameters
+connection parameters
+these are the same parameter values that you supplied on the command-line when you ran the tutorial; they describe how to connect to the Accumulo instance where your data reside
+- click save
+- click publish
+- generate bounding box from the data
+- then go to second next tab and check the checkbox for time
+- open the layer. But append `&TIME=2014-01-01T00:00:00.000Z/2014-01-31T23:59:59.999Z` to the URL as the base url will not include time information and thus not show all the data
+![geoserver2](img/time.jpg "add time")
+- the result is ![geoserver2](img/result.jpg "result"), but strangely CQL controls are all missing.
