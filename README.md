@@ -45,23 +45,34 @@ java -cp geomesa-quickstart-accumulo/target/geomesa-quickstart-accumulo-1.3.0.ja
   com.example.geomesa.accumulo.AccumuloQuickStart \
   -instanceId accumulo \
   -zookeepers zookeeper \
-  -user root \
-  -password GisPwd \
+  -user root \
+  -password GisPwd \
   -tableName quickstart
 ```
 - you can monitor accumulo here http://localhost:9995/accumulo
 
-# TODO
+you should be able to see the following out put
 
- - currently it is crashing
- - checkout geomesas gitter, there are some really interesting notes
- - apparently the iterators ore (not yet out of the box) available in the geodocker implementation
- - you need to add the jar into `ACCUMULO_HOME/lib` to *globally* install it. Otherwise namespaces are possible as well
-```
-The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
-Configured server-side iterators do not match client version - client version: 1.3.0, server version: unavailable
-Creating new features
-Inserting new features
+´´´
 Submitting query
-Exception in thread "main" java.lang.RuntimeException: org.apache.accumulo.core.client.impl.AccumuloServerException: Error on server 845c80b29b3a:9997
-```
+1.  Bierce|394|Fri Aug 01 23:55:05 UTC 2014|POINT (-77.42555615743139 -37.26710898726304)|null
+2.  Bierce|343|Wed Aug 06 08:59:22 UTC 2014|POINT (-76.66826220670282 -37.44503877750368)|null
+3.  Bierce|259|Thu Aug 28 19:59:30 UTC 2014|POINT (-76.90122194030118 -37.148525741002466)|null
+4.  Bierce|640|Sun Sep 14 19:48:25 UTC 2014|POINT (-77.36222958792739 -37.13013846773835)|null
+5.  Bierce|589|Sat Jul 05 06:02:15 UTC 2014|POINT (-76.88146600670152 -37.40156607152168)|null
+6.  Bierce|886|Tue Jul 22 18:12:36 UTC 2014|POINT (-76.59795732474399 -37.18420917493149)|null
+7.  Bierce|322|Tue Jul 15 21:09:42 UTC 2014|POINT (-77.01760098223343 -37.30933767159561)|null
+8.  Bierce|925|Mon Aug 18 03:28:33 UTC 2014|POINT (-76.5621106573523 -37.34321201566148)|null
+9.  Bierce|931|Fri Jul 04 22:25:38 UTC 2014|POINT (-76.51304097832912 -37.49406125975311)|null
+Submitting secondary index query
+Feature ID Observation.859 | Who: Bierce
+Feature ID Observation.355 | Who: Bierce
+Feature ID Observation.940 | Who: Bierce
+Feature ID Observation.631 | Who: Bierce
+Feature ID Observation.817 | Who: Bierce
+Submitting secondary index query with sorting (sorted by 'What' descending)
+Feature ID Observation.999 | Who: Addams | What: 999
+Feature ID Observation.996 | Who: Addams | What: 996
+Feature ID Observation.993 | Who: Addams | What: 993
+Feature ID Observation.990 | Who: Addams | What: 990
+Feature ID Observation.987 | Who: Addams | What: 987
