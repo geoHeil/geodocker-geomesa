@@ -8,6 +8,7 @@
 
 - choose settings for accumulo / geomesa / ... version which fits your environment
 - if there are major changes you might need to recompile geomsa as well (and you need it present in local m2 folder to create the containers)
+
 	```
 	git clone https://github.com/locationtech/geomesa.git
 	cd geomesa
@@ -15,6 +16,7 @@
 	update ./build.sh to desired version numbers then
 	build/mvn clean install -DskipTests=true #test failures otherwise (timeouts on macbook) 
 	```
+	
 - create the containers by executing `./build.sh`
 
 **step 2: build the image for the tutorial**
